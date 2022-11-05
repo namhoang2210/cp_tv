@@ -26,10 +26,10 @@ const Slider: FC<SliderProps> = ({ images, coverType }) => {
       {images.map((item, index) => (
         <SwiperSlide
           style={{
-            width: "160px",
+            width: "150px",
           }}
           className={classNames({
-            "!ml-[28px]": index !== 0,
+            "!ml-[26px]": index !== 0,
           })}
           key={item.image}
         >

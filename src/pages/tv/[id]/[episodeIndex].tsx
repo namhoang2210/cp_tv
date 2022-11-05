@@ -16,7 +16,7 @@ const TVPage: NextPage<TVPageProps> = ({ info }) => {
   return (
     <>
       <Meta
-        title={`Watch ${info?.data.name} - Episode ${
+        title={`Xem ${info?.data.name} - Episode ${
           Number(router.query.episodeIndex) + 1
         } - ChuppyTV`}
         description="ChuppyTV"

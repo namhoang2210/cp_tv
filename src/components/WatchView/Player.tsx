@@ -5,7 +5,7 @@ import { Player as VideoPlayer, PlayerProps } from "react-tuby";
 const Player: FC<PlayerProps> = (props) => {
   return (
     <VideoPlayer {...props}>
-      {(ref, props) => <HlsPlayer playerRef={ref} {...props} src={props.src} />}
+      {(ref, props) => <HlsPlayer playerRef={ref} {...props} src={props.src} autoPlay/>}
     </VideoPlayer>
   );
 };

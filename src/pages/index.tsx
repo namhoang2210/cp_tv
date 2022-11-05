@@ -1,7 +1,6 @@
 import { createSSGHelpers } from "@trpc/react/ssg";
 import type { InferGetStaticPropsType, NextPage } from "next";
 import { InView } from "react-intersection-observer";
-import ScrollToTop from "react-scroll-to-top";
 import superjson from "superjson";
 
 import BannerSlider from "@/components/Home/BannerSlider";
@@ -121,7 +120,6 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
           <TopSearches topSearches={topSearches!} />
         </div>
       </div>
-      <ScrollToTop className="hidden md:flex justify-center pt-1" smooth />
       <Footer />
     </>
   );

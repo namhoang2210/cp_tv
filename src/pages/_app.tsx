@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <NextNProgress color="#0D90F3" options={{ showSpinner: false }} />
+      <NextNProgress color="#37beca" options={{ showSpinner: false }} />
       <Component {...pageProps} />
       {process.env.NEXT_PUBLIC_GA_ID && (
         <>

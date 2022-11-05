@@ -31,8 +31,16 @@ body {
   color: #37beca !important;
 }
 
+.swiper-button-next:hover {
+  color: #0ab5df !important;
+}
+
 .swiper-button-prev {
   color: #37beca !important;
+}
+
+.swiper-button-prev:hover {
+  color: #0ab5df !important;
 }
 
 .fade-loading {
@@ -66,4 +74,8 @@ body {
   background-color: #48c1c3 !important;
   width: 25px !important;
   border-radius: 9999px !important;
+}
+
+.swiper-button-disabled {
+  display: none !important;
 }

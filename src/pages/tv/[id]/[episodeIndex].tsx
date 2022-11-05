@@ -18,8 +18,8 @@ const TVPage: NextPage<TVPageProps> = ({ info }) => {
       <Meta
         title={`Watch ${info?.data.name} - Episode ${
           Number(router.query.episodeIndex) + 1
-        } - Filmhot`}
-        description="FilmHot - AdFree Movie / Anime Watching Website"
+        } - ChuppyTV`}
+        description="ChuppyTV"
         image={info?.data.coverHorizontalUrl || "/preview.png"}
       />
       <WatchView

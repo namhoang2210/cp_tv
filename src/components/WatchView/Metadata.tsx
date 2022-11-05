@@ -59,7 +59,7 @@ const MetaData: FC<MetaDataProps> = ({ data, episodeIndex }) => {
           <h1 className="text-lg mt-3 font-medium">Tập phim</h1>
           <div
             className={classNames("flex flex-wrap gap-3 relative", {
-              "before:absolute before:bg-gradient-to-b before:from-[#00000000] before:to-dark before:top-10 before:w-full before:left-0 before:h-8 max-h-[68px] overflow-hidden":
+              "before:absolute before:bg-gradient-to-b before:from-[#00000000] before:to-dark before:top-10 before:w-full before:left-0 before:h-8 max-h-[50px] overflow-hidden":
                 showLoadMoreButton && !isExpanded,
             })}
           >

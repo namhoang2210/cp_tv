@@ -38,7 +38,7 @@ const BannerSlider: FC<SliderProps> = ({ images }) => {
                 src={item.image}
                 alt=""
               />
-              <h1 className="scale-100 absolute left-[6%] bottom-[70%] md:bottom-[10%] text-lg md:text-3xl max-w-[86%] whitespace-nowrap overflow-hidden text-ellipsis">
+              <h1 className="scale-100 absolute left-[6%] bottom-[70%] md:bottom-[10%] text-lg md:text-3xl xl:text-4xl font-semibold max-w-[86%] whitespace-nowrap overflow-hidden text-ellipsis">
                 {item.title}
               </h1>
             </a>

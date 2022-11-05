@@ -66,17 +66,18 @@ const HeaderBar = () => {
             variant="small"
             className="text-transparent bg-clip-text bg-gradient-to-r from-[#90cea1] to-[#01b4e4] uppercase text-2xl md:text-3xl font-bold"
           >
-            <button onClick={()=> router.push("/")}>CHUPPYTV</button>
+            <button className="flex items-center gap-1" onClick={()=> router.push("/")}>
+              <img className="h-7 w-8 md:h-8 md:w-10" src="/icon.png" />
+              CHUPPYTV
+            </button>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
         </div>
         <div className="hidden lg:block">
           <SearchBox />
         </div>
-        <IconButton
-          variant="text"
+        <button
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
         {openNav ? (
@@ -109,7 +110,7 @@ const HeaderBar = () => {
             />
           </svg>
         )}
-      </IconButton>
+      </button>
     </div>
     <MobileNav open={openNav}>
       {navList}

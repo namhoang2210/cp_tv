@@ -7,7 +7,6 @@ import BannerSlider from "@/components/Home/BannerSlider";
 import InfiniteLoader from "@/components/Home/InfiniteLoader";
 import SectionSlider from "@/components/Home/SectionSlider";
 import HeaderBar from "@/components/Layout/Headerbar";
-import SearchBox from "@/components/Search/SearchBox";
 import TopSearches from "@/components/Search/TopSearches";
 import Meta from "@/components/Shared/Meta";
 import { appRouter } from "@/server/createRouter";

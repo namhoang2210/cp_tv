@@ -26,7 +26,7 @@ const Slider: FC<SliderProps> = ({ images, coverType }) => {
       {images.map((item, index) => (
         <SwiperSlide
           style={{
-            width: "150px",
+            width: "160px",
           }}
           className={classNames({
             "!ml-[28px]": index !== 0,

@@ -24,6 +24,7 @@ specifiers:
   eslint-config-next: 12.2.5
   eslint-plugin-simple-import-sort: ^7.0.0
   jotai: ^1.7.8
+  moment: ^2.29.4
   next: 12.2.5
   next-superjson: ^0.0.4
   nextjs-progressbar: ^0.0.14
@@ -34,6 +35,7 @@ specifiers:
   react-intersection-observer: ^9.4.0
   react-lazy-load-image-component: ^1.5.5
   react-query: '3'
+  react-scroll-to-top: ^3.0.0
   react-tuby: ^0.1.24
   subtitle-converter: ^3.0.11
   superjson: ^1.9.1
@@ -57,6 +59,7 @@ dependencies:
   axios: 0.27.2
   classnames: 2.3.1
   jotai: 1.7.8_react@18.2.0
+  moment: 2.29.4
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   next-superjson: 0.0.4_hxl37nwlyjisl3a2fjlc4lffbm
   nextjs-progressbar: 0.0.14_next@12.2.5+react@18.2.0
@@ -66,6 +69,7 @@ dependencies:
   react-intersection-observer: 9.4.0_react@18.2.0
   react-lazy-load-image-component: 1.5.5_biqbaboplfbrettd7655fr4n2y
   react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
+  react-scroll-to-top: 3.0.0_react@18.2.0
   react-tuby: 0.1.24_react@18.2.0
   subtitle-converter: 3.0.11
   superjson: 1.9.1
@@ -3130,6 +3134,10 @@ packages:
       yargs-unparser: 1.6.0
     dev: false
 
+  /moment/2.29.4:
+    resolution: {integrity: sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==}
+    dev: false
+
   /mrmime/1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
     engines: {node: '>=10'}
@@ -3688,6 +3696,14 @@ packages:
       match-sorter: 6.3.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-scroll-to-top/3.0.0_react@18.2.0:
+    resolution: {integrity: sha512-I/k45Ujai097du59tHBbzGxN7Lyc6K8Uc3IChq6HMXaBfB8N/rrfm055T5Yv0DWfVpf6pOFaBmhD3LOfH5unGw==}
+    peerDependencies:
+      react: ^16.8.0 || 17.x || ^18
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-ssr-prepass/1.5.0_react@18.2.0:

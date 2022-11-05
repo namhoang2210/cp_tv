@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { FC, useEffect, useState } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 import { MovieInfo } from "@/types/movie";
 import { trpc } from "@/utils/trpc";
@@ -8,7 +9,6 @@ import Footer from "../Layout/Footer";
 import HeaderBar from "../Layout/Headerbar";
 import MetaData from "./Metadata";
 import Similar from "./Similar";
-
 const Player = dynamic(() => import("./Player"), { ssr: false });
 
 type WatchViewProps = MovieInfo & {
@@ -119,7 +119,8 @@ const WatchView: FC<WatchViewProps> = ({
         <MetaData data={data} episodeIndex={episodeIndex} />
         <Similar data={data} />
       </div>
-      <Footer />     
+      <ScrollToTop className="hidden md:flex justify-center pt-1" smooth />
+      <Footer />    
     </>
   );
 };

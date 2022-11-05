@@ -15,7 +15,7 @@ interface SliderProps {
   coverType: 0 | 1;
 }
 
-const Slider: FC<SliderProps> = ({ images, coverType }) => {
+const Slider: FC<SliderProps> = ({ images }) => {
   return (
     <Swiper
       modules={[Navigation]}

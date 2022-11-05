@@ -1,7 +1,8 @@
+import "swiper/css/pagination";
+
 import Link from "next/link";
 import { FC } from "react";
-import ReactCardCarousel from 'react-card-carousel';
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay , Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import ImageFade from "../Shared/ImageFade";
@@ -18,8 +19,8 @@ const BannerSlider: FC<SliderProps> = ({ images }) => {
   return (
     <Swiper
       className="rounded-lg overflow-hidden"
-      modules={[Navigation, Autoplay]}
-      navigation
+      modules={[Pagination, Autoplay]}
+      pagination={true} 
       loop
       slidesPerView={1}
       autoplay={{
@@ -37,7 +38,7 @@ const BannerSlider: FC<SliderProps> = ({ images }) => {
                 src={item.image}
                 alt=""
               />
-              <h1 className="scale-100 absolute left-[7%] bottom-[10%] text-xl md:text-3xl max-w-[86%] whitespace-nowrap overflow-hidden text-ellipsis">
+              <h1 className="scale-100 absolute left-[6%] bottom-[70%] md:bottom-[10%] text-lg md:text-3xl max-w-[86%] whitespace-nowrap overflow-hidden text-ellipsis">
                 {item.title}
               </h1>
             </a>

@@ -61,3 +61,9 @@ body {
     opacity: 0;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #48c1c3 !important;
+  width: 25px !important;
+  border-radius: 9999px !important;
+}

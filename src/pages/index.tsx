@@ -71,8 +71,8 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
               </div>
             ) : (
               <div key={section.homeSectionId}>
-                <div className="flex items-center gap-2 text-2xl mb-3 mt-12">
-                  <div className="fade-loading"></div>
+                <div className="text-xl flex items-center gap-2 md:text-2xl mb-3 mt-12">
+                  <div className="hidden md:block fade-loading"></div>
                   <div className="font-semibold">{section.homeSectionName.replace("Loklok", "trên ChuppyTV")}</div>
                 </div>
                 <SectionSlider

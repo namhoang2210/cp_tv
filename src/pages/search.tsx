@@ -19,15 +19,14 @@ const Search: FC<SearchProps> = ({ result, topSearches, query }) => {
           description=""
           image=""
         />
-        <div className="flex justify-center my-[100px] mx-6">
-          <div className="w-full max-w-[400px] flex flex-col items-center gap-4">
-            <div className="flex flex-col items-stretch gap-3">
-              <h1 className="text-2xl">Search for your favorite movies</h1>
+        <HeaderBar />
+        <div className="mb-[50px] mx-4">
+          <div className="w-full flex flex-col items-center gap-4">
+            <div className="flex flex-col items-stretch gap-3 mt-10">
               <SearchBox autoFocus />
             </div>
-
             <div className="mt-8 w-full">
-              <h1 className="text-lg mb-3">Popular Searches</h1>
+              <h1 className="text-lg mb-3">Top tìm kiếm</h1>
               <TopSearches topSearches={topSearches} />
             </div>
           </div>

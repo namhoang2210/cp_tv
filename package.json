@@ -13,6 +13,7 @@
     "@ducanh2912/react-hls-player": "3.2.2",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@material-tailwind/react": "^1.2.4",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.10",
     "@supabase/supabase-js": "^1.35.6",

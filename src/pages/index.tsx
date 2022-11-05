@@ -30,7 +30,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
     <>
       <Meta
         title="ChuppyTV"
-        description="Your favorite movies and TV shows in one place"
+        description=""
         image="/preview.png"
       />
       <HeaderBar />

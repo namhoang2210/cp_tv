@@ -6,6 +6,7 @@ import superjson from "superjson";
 import BannerSlider from "@/components/Home/BannerSlider";
 import InfiniteLoader from "@/components/Home/InfiniteLoader";
 import SectionSlider from "@/components/Home/SectionSlider";
+import Footer from "@/components/Layout/Footer";
 import HeaderBar from "@/components/Layout/Headerbar";
 import TopSearches from "@/components/Search/TopSearches";
 import Meta from "@/components/Shared/Meta";
@@ -119,6 +120,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
           <TopSearches topSearches={topSearches!} />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

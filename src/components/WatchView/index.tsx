@@ -4,6 +4,7 @@ import { FC, useEffect, useState } from "react";
 import { MovieInfo } from "@/types/movie";
 import { trpc } from "@/utils/trpc";
 
+import Footer from "../Layout/Footer";
 import HeaderBar from "../Layout/Headerbar";
 import MetaData from "./Metadata";
 import Similar from "./Similar";
@@ -118,10 +119,7 @@ const WatchView: FC<WatchViewProps> = ({
         <MetaData data={data} episodeIndex={episodeIndex} />
         <Similar data={data} />
       </div>
-               
-              
-  
-           
+      <Footer />     
     </>
   );
 };

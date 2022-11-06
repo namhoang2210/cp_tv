@@ -77,7 +77,7 @@ const Slider: FC<SliderProps> = ({ images }) => {
                   height="200px"
                   alt=""
                 />
-                <h1 className="group-hover:text-[#48c1c4] transition duration-300 pt-4 text-xs lg:text-sm font-semibold px-1.5 lg:px-2 m-0 max-w-full whitespace-nowrap overflow-hidden text-ellipsis">
+                <h1 className="group-hover:text-[#48c1c4] transition duration-300 pt-4 text-sm font-semibold px-1.5 lg:px-2 m-0 max-w-full whitespace-nowrap overflow-hidden text-ellipsis">
                   {item.title}
                 </h1>
               </a>

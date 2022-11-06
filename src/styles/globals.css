@@ -89,7 +89,7 @@ body {
 
 .CircularProgressbar-text {
   font-size: 40px !important;
-  fill: rgb(195, 194, 194) !important;
+  fill:  rgb(249 250 251) !important;
   font-weight: 600;
 }
 
@@ -98,6 +98,6 @@ body {
 }
 
 .CircularProgressbar-path {
-  stroke: rgb(195, 194, 194) !important;
+  stroke:  rgb(249 250 251) !important;
   stroke-width: 7px !important;
 }

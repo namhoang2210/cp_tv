@@ -73,7 +73,6 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
             ) : (
               <div key={section.homeSectionId}>
                 <div className="text-xl flex items-center gap-2 md:text-2xl mb-3 mt-12">
-                  <div className="fade-loading w-[18px] h-[18px] md:w-[20px] md:h-[20px]"></div>
                   <div className="font-medium md:font-semibold">{section.homeSectionName.replace("Loklok", "trên ChuppyTV")}</div>
                 </div>
                 <SectionSlider
@@ -89,6 +88,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
                         searchParams.get("type") === "0"
                           ? `/movie/${searchParams.get("id")}`
                           : `/tv/${searchParams.get("id")}/0`,
+                      point: item.score,    
                     };
                   })}
                   coverType={section.coverType}

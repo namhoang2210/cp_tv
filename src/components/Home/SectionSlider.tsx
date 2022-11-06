@@ -11,11 +11,12 @@ interface SliderProps {
     title: string;
     image: string;
     link: string;
+    point: number;
   }[];
   coverType: 0 | 1;
 }
 
-const Slider: FC<SliderProps> = ({ images }) => {
+const Slider: FC<SliderProps> = ({ images }) => {    
   return (
     <div>
       <Swiper
@@ -36,9 +37,9 @@ const Slider: FC<SliderProps> = ({ images }) => {
             key={item.image}
           >
             <Link href={item.link} prefetch={false} >
-              <a className="block rounded-lg overflow-hidden group ">
+              <a className="relative block rounded-lg overflow-hidden group ">
                 <ImageFade
-                  className="group-hover:brightness-75 transition duration-300 object-cover rounded-xl"
+                  className="group-hover:brightness-75 transition duration-300 object-cover rounded-lg"
                   src={item.image}
                   width="150px"
                   height="240px"
@@ -47,6 +48,14 @@ const Slider: FC<SliderProps> = ({ images }) => {
                 <h1 className="group-hover:text-[#48c1c4] transition duration-300 pt-4 text-sm font-semibold px-2 m-0 max-w-full whitespace-nowrap overflow-hidden text-ellipsis">
                   {item.title}
                 </h1>
+                {item.point && 
+                  <div className={(item.point >= 8 && "radial-progress absolute bottom-7 left-2.5 text-gray-200 bg-[#1a9d5e] w-[30px] h-[30px] text-[13px] border-[2px] border-[#1a9d5e] font-semibold") ||
+                      (item.point < 8 && item.point >= 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#e0a82e]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#e0a82e] font-semibold") ||
+                      (item.point < 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#d93c63]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#d93c63] font-semibold")} 
+                      style={{"--value": item.point*10,  "--thickness": "2px"}}>
+                      <span className="text-white">{item.point}</span>
+                  </div>
+                }
               </a>
             </Link>
           </SwiperSlide>

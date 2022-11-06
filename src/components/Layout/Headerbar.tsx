@@ -1,5 +1,9 @@
 import {
   Button,
+  Menu,
+  MenuHandler,
+  MenuItem,
+  MenuList,
   MobileNav,
   Typography,
 } from "@material-tailwind/react";
@@ -21,12 +25,10 @@ const HeaderBar = () => {
   }, []);
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-start lg:gap-4 md:text-lg">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-start lg:gap-5 md:text-lg">
       <Typography
         as="li"
-        variant="medium"
-        color="blue-gray"
-        className="p-1 font-semibold hover:text-[#44c0c4]"
+        className="p-1 mt-2 font-semibold hover:text-[#44c0c4]"
       >
         <button onClick={()=> router.push("/")}>
           Trang chủ
@@ -34,9 +36,7 @@ const HeaderBar = () => {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
-        color="blue-gray"
-        className="p-1 font-semibold hover:text-[#44c0c4]"
+        className="p-1 mt-2 font-semibold hover:text-[#44c0c4]"
       >
         <button onClick={()=> router.push("/history")}>
           Lịch sử
@@ -44,9 +44,7 @@ const HeaderBar = () => {
       </Typography>
       <Typography
         as="li"
-        variant="medium"
-        color="blue-gray"
-        className="p-1 font-semibold hover:text-[#44c0c4]"
+        className="p-1 mt-2 font-semibold hover:text-[#44c0c4]"
       >
         <button onClick={()=> router.push("/")}>
           Liên hệ
@@ -66,7 +64,7 @@ const HeaderBar = () => {
           >
             <button className="flex items-center gap-1" onClick={()=> router.push("/")}>
               <img className="h-7 w-8 md:h-8 md:w-10" src="/icon.png" />
-              CHUPPYTV
+              <div className="mt-[3px]">CHUPPYTV</div>
             </button>
           </Typography>
           <div className="hidden lg:block">{navList}</div>

@@ -5,6 +5,7 @@ export interface HomeSection {
   homeSectionName: string;
   homeSectionType: string;
   recommendContentVOList: {
+    score: number;
     contentType: string;
     id: number;
     imageUrl: string;

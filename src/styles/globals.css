@@ -82,3 +82,22 @@ body {
   height: 35px !important;
   width: 35px !important;
 }
+
+.CircularProgressbar {
+  width: 32px !important;
+}
+
+.CircularProgressbar-text {
+  font-size: 40px !important;
+  fill: white !important;
+  font-weight: 600;
+}
+
+.CircularProgressbar-trail {
+  stroke: #57565663 !important;
+}
+
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 7px !important;
+}

@@ -15,7 +15,7 @@ const Similar: FC<SimilarProps> = ({ data }) => {
         data.refList.filter((item) => item.id !== data.id).length > 0 && (
           <>
             <h1 className="text-2xl my-3">Phim trong series</h1>
-            <div className="flex flex-wrap gap-8 mt-4">
+            <div className="grid gap-10 grid-cols-sm md:grid-cols-xl mt-4 my-6">
               {data?.refList
                 .filter((item) => item.id !== data.id)
                 .map((ref) => (
@@ -31,8 +31,8 @@ const Similar: FC<SimilarProps> = ({ data }) => {
                           alt=""
                         />
                       </div>
-                      <div className="my-2 flex-grow">
-                        <p>{ref.name}</p>
+                      <div className="whitespace-nowrap px-2 pt-4  text-sm font-semibold">
+                        <div className="text-ellipsis overflow-hidden">{ref.name}</div>
                       </div>
                     </a>
                   </Link>
@@ -44,7 +44,7 @@ const Similar: FC<SimilarProps> = ({ data }) => {
       {data?.likeList && data.likeList.length > 0 && (
         <>
           <h1 className="text-2xl my-3">Phim cùng thể loại</h1>
-          <div className="flex flex-wrap gap-8 mt-4">
+          <div className="grid gap-10 grid-cols-sm md:grid-cols-xl mt-4">
             {data?.likeList.map((like) => (
               <Link
                 key={like.id}

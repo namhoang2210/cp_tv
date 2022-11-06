@@ -79,8 +79,14 @@ body {
 }
 
 .scroll-to-top {
-  height: 35px !important;
-  width: 35px !important;
+  height: 32px !important;
+  width: 32px !important;
+  background-color: #37beca !important;
+} 
+
+.scroll-to-top svg {
+  height: 22px !important;
+  fill: rgb(249 250 251) !important;
 }
 
 .CircularProgressbar {

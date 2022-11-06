@@ -50,7 +50,7 @@ const MetaData: FC<MetaDataProps> = ({ data, episodeIndex }) => {
         ))}
       </div>
       <div className="text-sm">
-        <div>Giói thiệu:</div>
+        <div>Giới thiệu:</div>
         <p>{data.introduction}</p>
       </div>
 

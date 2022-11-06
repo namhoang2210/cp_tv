@@ -56,7 +56,7 @@ const Search: FC<SearchProps> = ({ result, topSearches, query }) => {
               </Link>
             </div>
           ) : (
-            <div className="grid gap-6 grid-cols-sm md:grid-cols-lg">
+            <div className="grid gap-6 grid-cols-sm md:grid-cols-xl">
               {result.map((item) => (
                 <Link
                   href={
@@ -66,19 +66,18 @@ const Search: FC<SearchProps> = ({ result, topSearches, query }) => {
                   }
                   key={item.id}
                 >
-                  <a className="relative h-0 pb-[163%] bg-dark-lighten rounded overflow-hidden group">
+                  <a className="relative h-0 pb-[163%] rounded overflow-hidden group">
                     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-stretch">
                       <div className="relative w-full h-0 pb-[140%] flex-shrink-0 group-hover:brightness-[80%] transition duration-300">
                         <ImageFade
-                          width={250}
-                          className="absolute top-0 left-0 w-full h-full object-cover"
+                          className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                           src={item.coverVerticalUrl}
                           alt=""
                         />
                       </div>
 
                       <div className="flex-grow flex items-center">
-                        <h1 className="w-full whitespace-nowrap overflow-hidden text-ellipsis px-2 group-hover:text-primary transition duration-300">
+                        <h1 className="w-full whitespace-nowrap overflow-hidden text-ellipsis text-sm p-2 group-hover:text-[#37beca] transition duration-300">
                           {item.name}
                         </h1>
                       </div>

@@ -23,6 +23,7 @@ const Meta: FC<MetaProps> = ({ title, description, image }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
+      <meta name="theme-color" content="#032541" />
     </Head>
   );
 };

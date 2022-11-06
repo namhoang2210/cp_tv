@@ -31,6 +31,7 @@ specifiers:
   nextjs-progressbar: ^0.0.14
   postcss: ^8.4.16
   react: 18.2.0
+  react-circular-progressbar: ^2.1.0
   react-dom: 18.2.0
   react-icons: ^4.4.0
   react-intersection-observer: ^9.4.0
@@ -66,6 +67,7 @@ dependencies:
   next-superjson: 0.0.4_hxl37nwlyjisl3a2fjlc4lffbm
   nextjs-progressbar: 0.0.14_next@12.2.5+react@18.2.0
   react: 18.2.0
+  react-circular-progressbar: 2.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
   react-intersection-observer: 9.4.0_react@18.2.0
@@ -3624,6 +3626,14 @@ packages:
 
   /ramda/0.25.0:
     resolution: {integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==}
+    dev: false
+
+  /react-circular-progressbar/2.1.0_react@18.2.0:
+    resolution: {integrity: sha512-xp4THTrod4aLpGy68FX/k1Q3nzrfHUjUe5v6FsdwXBl3YVMwgeXYQKDrku7n/D6qsJA9CuunarAboC2xCiKs1g==}
+    peerDependencies:
+      react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:

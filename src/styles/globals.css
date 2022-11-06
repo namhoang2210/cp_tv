@@ -44,8 +44,6 @@ body {
 }
 
 .fade-loading {
-  width: 20px;
-  height: 20px;
   background-color: #48c1c3;
   border-radius: 100rem;
   position: relative;
@@ -78,4 +76,9 @@ body {
 
 .swiper-button-disabled {
   display: none !important;
+}
+
+.scroll-to-top {
+  height: 35px !important;
+  width: 35px !important;
 }

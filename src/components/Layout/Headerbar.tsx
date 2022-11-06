@@ -1,8 +1,6 @@
 import {
   Button,
-  IconButton,
   MobileNav,
-  Navbar,
   Typography,
 } from "@material-tailwind/react";
 import { useRouter } from "next/router";
@@ -23,7 +21,7 @@ const HeaderBar = () => {
   }, []);
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-start lg:gap-4">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-start lg:gap-4 md:text-lg">
       <Typography
         as="li"
         variant="medium"

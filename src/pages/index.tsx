@@ -30,7 +30,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
   return (
     <>
       <Meta
-        title="ChuppyTV"
+        title="ChuppyTV - Trang chủ"
         description=""
         image="/preview.png"
       />
@@ -73,8 +73,8 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
             ) : (
               <div key={section.homeSectionId}>
                 <div className="text-xl flex items-center gap-2 md:text-2xl mb-3 mt-12">
-                  <div className="hidden md:block fade-loading"></div>
-                  <div className="font-semibold">{section.homeSectionName.replace("Loklok", "trên ChuppyTV")}</div>
+                  <div className="fade-loading w-[18px] h-[18px] md:w-[20px] md:h-[20px]"></div>
+                  <div className="font-medium md:font-semibold">{section.homeSectionName.replace("Loklok", "trên ChuppyTV")}</div>
                 </div>
                 <SectionSlider
                   images={section.recommendContentVOList.map((item) => {
@@ -116,7 +116,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
           )}
         </div>
 
-        <div className="flex-shrink-0 w-[350px] pl-10 pb-8 sticky top-16 h-screen scrollbar overflow-hidden overflow-y-auto hidden md:block">
+        <div className="flex-shrink-0 w-[350px] pl-10 pb-8 sticky top-16 h-screen scrollbar overflow-hidden overflow-y-auto hidden lg:block">
           <h1 className="text-2xl font-semibold my-6">Top tìm kiếm</h1>
           <TopSearches topSearches={topSearches!} />
         </div>

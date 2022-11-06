@@ -21,7 +21,7 @@ const Similar: FC<SimilarProps> = ({ data }) => {
                 .map((ref) => (
                   <Link
                     key={ref.id}
-                    href={`/${ref.category === 0 ? "movie" : "tv"}/${ref.id}`}
+                    href={`/${ref.category === 0 ? "moviea" : "tv"}/${ref.id}${ref.category === 0 ? "" : "/0"}`}
                   >
                     <a className="w-[150px] ">
                       <div className="bg-white h-[240px] rounded-xl">
@@ -48,7 +48,7 @@ const Similar: FC<SimilarProps> = ({ data }) => {
             {data?.likeList.map((like) => (
               <Link
                 key={like.id}
-                href={`/${like.category === 0 ? "movie" : "tv"}/${like.id}`}
+                href={`/${like.category === 0 ? "movie" : "tv"}/${like.id}${like.category === 0 ? "" : "/0"}`}
               >
                 <a className="w-[150px] ">
                   <div className="bg-white h-[240px] rounded-xl">

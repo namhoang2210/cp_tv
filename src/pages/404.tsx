@@ -15,12 +15,12 @@ const Error: FC = () => {
         image="/preview.png"
       />
       <div className="flex flex-col min-h-screen justify-center items-center gap-4">
-        <img className="w-full max-w-[200px] h-auto" src="/error.png" alt="" />
-        <p className="text-xl">Something went wrong</p>
+        <img className="w-full max-w-[200px] h-auto" src="/cinema.png" alt="" />
+        <p className="text-xl">Có lỗi rồi bạn ơi!!!</p>
 
         {router.pathname !== "/" && (
           <Link href="/">
-            <a className="text-primary">Return home</a>
+            <a className="text-primary">Quay về trang chủ</a>
           </Link>
         )}
       </div>

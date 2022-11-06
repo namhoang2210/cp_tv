@@ -5,7 +5,7 @@ const Footer = () => {
   const router = useRouter();
   return (
   <footer className="p-4 bg-[#032541] md:flex md:items-center md:justify-between md:py-6 md:px-[10%] mt-10">
-      <span className="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a onClick={()=> router.push("/")} className="hover:underline">ChuppyTV™</a>. All Rights Reserved.
+      <span className="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400"><a onClick={()=> router.push("/")} className="hover:underline cursor-pointer">© 2022 ChuppyTV™</a>. All Rights Reserved.
       </span>
       <ul className="flex flex-wrap items-center justify-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>

@@ -49,11 +49,14 @@ const Slider: FC<SliderProps> = ({ images }) => {
                   {item.title}
                 </h1>
                 {item.point && 
-                  <div className={(item.point >= 8 && "radial-progress absolute bottom-7 left-2.5 text-gray-200 bg-[#1a9d5e] w-[30px] h-[30px] text-[13px] border-[2px] border-[#1a9d5e] font-semibold") ||
-                      (item.point < 8 && item.point >= 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#e0a82e]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#e0a82e] font-semibold") ||
-                      (item.point < 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#d93c63]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#d93c63] font-semibold")} 
-                      style={{"--value": item.point*10,  "--thickness": "2px"}}>
-                      <span className="text-white">{item.point}</span>
+                  <div
+                    // className={(item.point >= 8 && "radial-progress absolute bottom-7 left-2.5 text-gray-200 bg-[#1a9d5e] w-[30px] h-[30px] text-[13px] border-[2px] border-[#1a9d5e] font-semibold") ||
+                    // (item.point < 8 && item.point >= 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#e0a82e]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#e0a82e] font-semibold") ||
+                    // (item.point < 5 && "radial-progress absolute bottom-7 left-2.5 bg-[#d93c63]  w-[30px] h-[30px] text-[13px] border-[2px] border-[#d93c63] font-semibold")} 
+                    style={{"--value": item.point*10,  "--thickness": "2px"}}
+                    className={`radial-progress absolute bottom-7 left-2.5 text-gray-200 w-[30px] h-[30px] text-[13px] border-[2px] font-semibold ${item.point >= 8 ? "bg-[#2bce7f] border-[#2bce7f]" : "bg-[#e0a82e] border-[#e0a82e]"}`}
+                    >
+                    <span>{item.point}</span>
                   </div>
                 }
               </a>

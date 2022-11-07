@@ -7,6 +7,7 @@ import { trpc } from "@/utils/trpc";
 
 import Footer from "../Layout/Footer";
 import HeaderBar from "../Layout/Headerbar";
+import Comment from "./Comment";
 import MetaData from "./Metadata";
 import Similar from "./Similar";
 const Player = dynamic(() => import("./Player"), { ssr: false });
@@ -93,7 +94,8 @@ const WatchView: FC<WatchViewProps> = ({
 
     localStorage.setItem("filmhot-recent", JSON.stringify(existing));
   }, [data]);
-
+  console.log(data);
+  
   return (
     <>
       <HeaderBar />
@@ -117,6 +119,7 @@ const WatchView: FC<WatchViewProps> = ({
       </div>
       <div className="px-4 md:px-[10%] md:smt-4">
         <MetaData data={data} episodeIndex={episodeIndex} />
+        <Comment episodeIndex={episodeIndex} movieId={data.id}/>
         <Similar data={data} />
       </div>
       <ScrollToTop className="hidden md:flex justify-center pt-1" smooth />

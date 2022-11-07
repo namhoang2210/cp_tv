@@ -94,7 +94,6 @@ const WatchView: FC<WatchViewProps> = ({
 
     localStorage.setItem("filmhot-recent", JSON.stringify(existing));
   }, [data]);
-  console.log(data);
   
   return (
     <>

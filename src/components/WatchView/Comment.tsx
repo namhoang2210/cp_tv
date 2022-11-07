@@ -12,7 +12,7 @@ const Comment: FC<CommentProps> = ({ movieId, episodeIndex }) => {
       <h1 className="text-2xl my-3">Bình luận</h1>
     <div className="bg-gray-100 rounded-lg">
       <FacebookProvider appId="1020036582169543">
-      <Comments width="100%" numPosts={3} mobile={true} href={`https://chuppytv.vercel.app/${episodeIndex ? 'tv' : 'movie'}/${movieId}/${episodeIndex ? episodeIndex : "" }`} />
+      <Comments width="100%" numPosts={3} mobile={true} href={`https://chuppytv.vercel.app/${episodeIndex ? 'tv' : 'movie'}/${movieId}${episodeIndex ? '/' : "" }${episodeIndex ? episodeIndex : "" }`} />
       </FacebookProvider>
     </div>
     </div>

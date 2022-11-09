@@ -35,7 +35,7 @@ const History: FC = () => {
         image=""
       />
       <HeaderBar />
-      <div className="flex flex-col items-stretch px-4 md:px-[10%]">
+      <div className="flex flex-col items-stretch px-4 md:px-[10%] min-h-screen">
         <div className="flex justify-between mb-6">
           <h1 className="text-2xl font-semibold mt-12">Lịch sử </h1>
 

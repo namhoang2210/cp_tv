@@ -7,12 +7,23 @@ import { useRouter } from "next/router";
 import * as React from 'react';
 import { useEffect } from "react";
 
+import { trpc } from "@/utils/trpc";
+
 import SearchBox from '../Search/SearchBox';
 
 const HeaderBar = () => {
   const [openNav, setOpenNav] = React.useState(false);
   const router = useRouter();
- 
+  const { data } = trpc.useInfiniteQuery(
+    ["home.infinite", {}],
+    {
+      getNextPageParam: (_, allPages) => allPages.length,
+      refetchOnWindowFocus: false,
+      refetchOnMount: false,
+      refetchOnReconnect: false,
+    }
+  );
+
   useEffect(() => {
     window.addEventListener(
       "resize",
@@ -29,6 +40,17 @@ const HeaderBar = () => {
         <button onClick={()=> router.push("/")}>
           Trang chủ
         </button >
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 mt-2 font-semibold hover:text-[#44c0c4] dropdown hidden lg:block"
+      >
+        <label tabIndex={0} className="">Danh mục</label>
+        <ul tabIndex={0} className="dropdown-content p-2 shadow bg-[#2a303c] rounded-box max-h-[500px] overflow-y-scroll w-[300px]">
+        {data?.pages?.flat().filter((item) => item.homeSectionType !== "BANNER").map((item) =>(
+          <li className="whitespace-nowrap py-2 hover:text-gray-50" key={item.homeSectionId}><a href={`#${item.homeSectionId}`}>{item.homeSectionName.replace("Loklok" || "LOKLOK", "trên ChuppyTV")}</a></li>
+        ))}
+        </ul>
       </Typography>
       <Typography
         as="li"

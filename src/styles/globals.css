@@ -4,6 +4,7 @@
 
 body {
   @apply bg-[#0f172a] text-gray-100;
+  font-family: inherit !important;
 }
 
 ::-webkit-scrollbar {
@@ -82,7 +83,7 @@ body {
   height: 32px !important;
   width: 32px !important;
   background-color: #37beca !important;
-} 
+}
 
 .scroll-to-top svg {
   height: 22px !important;
@@ -95,7 +96,7 @@ body {
 
 .CircularProgressbar-text {
   font-size: 40px !important;
-  fill:  rgb(249 250 251) !important;
+  fill: rgb(249 250 251) !important;
   font-weight: 600;
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 .CircularProgressbar-path {
-  stroke:  rgb(249 250 251) !important;
+  stroke: rgb(249 250 251) !important;
   stroke-width: 7px !important;
 }
 

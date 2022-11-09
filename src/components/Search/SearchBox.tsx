@@ -68,15 +68,15 @@ const SearchBox: FC<SearchBoxProps> = ({ autoFocus }) => {
       </form>
 
       {suggestions.length > 0 && (
-        <div className="absolute z-10 top-full mt-2 rounded-xl left-0 w-full bg-gray-800 px-2 overflow-x-hidden overflow-y-auto max-h-[300px] flex-col items-stretch hidden group-focus-within:flex">
+        <div className="absolute z-10 top-full mt-2.5 rounded-2xl left-0 w-full bg-[#2a303c] px-2 overflow-x-hidden overflow-y-auto max-h-[300px] flex-col items-stretch hidden group-focus-within:flex">
           {suggestions.map((suggestion, index) => (
             <Link
               key={index}
               href={{ pathname: "/search", query: { q: suggestion } }}
             >
               <a
-                className={classNames("text-left p-2 w-full", {
-                  "border-b border-gray-500": index !== suggestions.length - 1,
+                className={classNames("text-left p-2 w-full hover:text-[#4eb0ab] text-[15px] font-semibold", {
+                  "": index !== suggestions.length - 1,
                 })}
               >
                 {suggestion}

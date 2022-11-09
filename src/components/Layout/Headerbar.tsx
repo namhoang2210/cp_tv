@@ -48,7 +48,7 @@ const HeaderBar = () => {
         <label tabIndex={0} className="">Danh mục</label>
         <ul tabIndex={0} className="dropdown-content p-2 shadow bg-[#2a303c] rounded-box max-h-[500px] overflow-y-scroll w-[300px]">
         {data?.pages?.flat().filter((item) => item.homeSectionType !== "BANNER").map((item) =>(
-          <li className="whitespace-nowrap py-2 hover:text-gray-50" key={item.homeSectionId}><a href={`#${item.homeSectionId}`}>{item.homeSectionName.replace("Loklok" || "LOKLOK", "trên ChuppyTV")}</a></li>
+          <li className="whitespace-nowrap py-2 hover:text-gray-50 w-[260px] overflow-clip text-ellipsis" key={item.homeSectionId}><a href={`#${item.homeSectionId}`}>{item.homeSectionName.replace("Loklok" || "LOKLOK", "trên ChuppyTV")}</a></li>
         ))}
         </ul>
       </Typography>

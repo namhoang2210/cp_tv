@@ -99,7 +99,7 @@ const WatchView: FC<WatchViewProps> = ({
     <>
       <HeaderBar />
       <div className="bg-black px-4 md:mx-[10%]">
-      <div className="max-w-[1000px] max-h-[560px] mx-auto mt-4 md:mt-10 px-4">
+      <div className="max-w-[1000px] max-h-[560px] mx-auto mt-4 md:mt-10">
         <Player
           key={playerKey}
           playerKey={playerKey}

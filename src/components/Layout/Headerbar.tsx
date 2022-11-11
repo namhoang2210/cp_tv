@@ -45,7 +45,7 @@ const HeaderBar = () => {
         as="li"
         className="p-1 mt-2 font-semibold hover:text-[#44c0c4] dropdown hidden lg:block"
       >
-        <label tabIndex={0} className="">Danh mục</label>
+        <label tabIndex={0} className="cursor-pointer">Danh mục</label>
         <ul tabIndex={0} className="dropdown-content p-2 shadow mt-1 bg-[#2a303c] rounded-box max-h-[500px] overflow-y-scroll w-[300px]">
         {data?.pages?.flat().filter((item) => item.homeSectionType !== "BANNER").map((item) =>(
           <li className="whitespace-nowrap text-[15px] py-1.5 hover:text-gray-50 w-[260px] overflow-clip text-ellipsis" key={item.homeSectionId}><a href={`#${item.homeSectionId}`}>{item.homeSectionName.replace("Loklok" || "LOKLOK", "trên ChuppyTV")}</a></li>

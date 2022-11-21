@@ -74,7 +74,7 @@ const Home: NextPage<HomeProps> = ({ topSearches }) => {
               <div key={section.homeSectionId} >
                 <div className="text-xl flex items-center gap-2 md:text-2xl mb-3 pt-12 relative">
                   <div id={section.homeSectionId.toString()} className="absolute -top-10"></div>
-                  <div className="font-medium md:font-semibold">{section.homeSectionName.replace("Loklok" || "LOKLOK", "trên ChuppyTV")}</div>
+                  <div className="font-medium md:font-semibold">{section.homeSectionName.replace("Loklok", "trên ChuppyTV").replace("LOKLOK","ChuppyTV")}</div>
                 </div>
                 <SectionSlider
                   images={section.recommendContentVOList.map((item) => {
